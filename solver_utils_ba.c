@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/push_swap.h"
+#include "push_swap.h"
 
 // This function calculates the required amount of rotation.
 // Calculations are done for ra+rb case.

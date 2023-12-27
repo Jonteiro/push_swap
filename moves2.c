@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/push_swap.h"
+#include "push_swap.h"
 
 // rr : ra and rb at the same time
 void	ft_rr(t_stack **a, t_stack **b, int j)

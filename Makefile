@@ -15,34 +15,32 @@ CC = gcc
 RM = rm -f
 FLAGS = -Wall -Wextra -Werror
 LIBFTDIR = libft/
-OBJ_DIR = obj/
-SRC_DIR = srcs/
 
-SRC_1 = srcs/push_swap/push_swap.c \
+SRC_1 = push_swap.c \
 
-SRC_2 =	srcs/push_swap/algorithm.c \
-		srcs/push_swap/ft_add_back.c \
-		srcs/push_swap/ft_stack_new.c \
-		srcs/push_swap/ft_check_utils.c \
-		srcs/push_swap/ft_parse.c \
-		srcs/push_swap/solver_utils_ab.c \
-		srcs/push_swap/solver_utils_ba.c \
-		srcs/push_swap/ft_rotate_and_push.c \
-		srcs/push_swap/moves1.c \
-		srcs/push_swap/moves_2.c \
-		srcs/push_swap/moves_3.c \
-		srcs/push_swap/ft_check_dup.c \
-		srcs/push_swap/ft_check_sorted.c \
-		srcs/push_swap/ft_error_print.c \
-		srcs/push_swap/ft_free.c \
-		srcs/push_swap/lst_utils.c \
-		srcs/push_swap/lst_utils_2.c \
-		srcs/push_swap/ft_parse_args_quoted.c \
-		srcs/push_swap/ft_list_args.c \
-		srcs/push_swap/ft_check_args.c \
-		srcs/push_swap/ft_sort_big.c \
-		srcs/push_swap/ft_sort_three.c \
-		srcs/push_swap/ft_rotate_type.c \
+SRC_2 =	algorithm.c \
+		ft_add_back.c \
+		ft_stack_new.c \
+		ft_check_utils.c \
+		ft_parse.c \
+		solver_utils_ab.c \
+		solver_utils_ba.c \
+		ft_rotate_and_push.c \
+		moves1.c \
+		moves2.c \
+		moves3.c \
+		ft_check_dup.c \
+		ft_check_sorted.c \
+		ft_error_print.c \
+		ft_free.c \
+		lst_utils.c \
+		lst_utils_2.c \
+		ft_parse_args_quoted.c \
+		ft_list_args.c \
+		ft_check_args.c \
+		ft_sort_big.c \
+		ft_sort_three.c \
+		ft_rotate_type.c \
 
 OBJ_1 = ${SRC_1:.c=.o}
 OBJ_2 = ${SRC_2:.c=.o}

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/push_swap.h"
+#include "push_swap.h"
 
 // ra (rotate a) : shift up all elements of stack a by 1. 
 // The first element becomes the last one.

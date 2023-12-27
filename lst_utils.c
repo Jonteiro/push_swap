@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/push_swap.h"
+#include "push_swap.h"
 
 // This function returns the last element of the stack.
 t_stack	*ft_lstlast(t_stack *lst)

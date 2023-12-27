@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/push_swap.h"
+#include "push_swap.h"
 
 //function which checks the character if it is alphanumerical
 int	ft_isalpha(int c)

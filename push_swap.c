@@ -16,14 +16,19 @@ int	main(int argc, char **argv)
 {
 	t_stack	*a;
 
-	a = ft_process(argc, argv);
-	if (!a || ft_checkdup(a))
+	if (argc == 1)
+		return (0);
+	else
 	{
+		a = ft_process(argc, argv);
+		if (ft_checkdup(a))
+		{
+			ft_free(&a);
+			ft_error();
+		}
+		if (!ft_checksorted(a))
+			ft_sort(&a);
 		ft_free(&a);
-		ft_error();
+		return (0);
 	}
-	if (!ft_checksorted(a))
-		ft_sort(&a);
-	ft_free(&a);
-	return (0);
 }

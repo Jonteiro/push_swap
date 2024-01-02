@@ -12,7 +12,6 @@
 
 #include "push_swap.h"
 
-//function which checks the character if it is alphanumerical
 int	ft_isalpha(int c)
 {
 	if ((c >= 58 && c <= 126) || (c >= 33 && c <= 42)
@@ -21,8 +20,7 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-//Here arguments are send to make ASCII check
-//regarding the alphanumeric values
+//ASCII check
 void	alpha_check(char **argv)
 {
 	int	i;
@@ -42,8 +40,6 @@ void	alpha_check(char **argv)
 	}
 }
 
-//With this function it is checked 
-//whether arguments include alfanumeric or not
 int	check_args(char **argv)
 {
 	alpha_check(argv);

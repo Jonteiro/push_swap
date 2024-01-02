@@ -83,7 +83,6 @@ void	ft_rrr(t_stack **a, t_stack **b, int j)
 }
 
 // pb (push b) : take the first element at the top of a and put it 
-// at the top of b. Do nothing if a is empty.
 void	ft_pb(t_stack **stack_a, t_stack **stack_b, int j)
 {
 	t_stack	*tmp;
@@ -99,7 +98,6 @@ void	ft_pb(t_stack **stack_a, t_stack **stack_b, int j)
 }
 
 // rrb (reverse rotate b) : shift down all elements of stack b by 1. 
-// The last element becomes the first one.
 void	ft_rrb(t_stack **b, int j)
 {
 	t_stack	*tmp;

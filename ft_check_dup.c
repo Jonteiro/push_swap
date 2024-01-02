@@ -12,8 +12,6 @@
 
 #include "push_swap.h"
 
-// This function checks if the stack includes
-// any duplicate numbers.
 int	ft_checkdup(t_stack *a)
 {
 	t_stack	*tmp;

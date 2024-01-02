@@ -12,8 +12,7 @@
 
 #include "push_swap.h"
 
-// This function free the string which is 
-// the integer values in between quotes.
+//free quoted string
 void	ft_freestr(char **lst)
 {
 	char	*n1;
@@ -29,9 +28,7 @@ void	ft_freestr(char **lst)
 	*lst = NULL;
 }
 
-// Function to parse the arguments from the quoted string
-// and send them to list_args function to add them into list.
-// With ft_split we split numbers from spaces.
+//parse quoted string
 t_stack	*ft_parse_args_quoted(char **argv)
 {
 	t_stack	*stack_a;

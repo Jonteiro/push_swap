@@ -12,8 +12,6 @@
 
 #include "push_swap.h"
 
-// This function sort the stack if there are only 
-// three elements in the stack.
 void	ft_sort_three(t_stack **stack_a)
 {
 	if (ft_min(*stack_a) == (*stack_a)->nbr)

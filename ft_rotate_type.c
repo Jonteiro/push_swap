@@ -12,11 +12,6 @@
 
 #include "push_swap.h"
 
-// This function calculate and decides which rotation
-// combination is best to use to sort the stack. Of
-// course, after rotation there is always one push
-// operation is left to do which i embeded to code.
-// Function is used during push from B to A.
 int	ft_rotate_type_ba(t_stack *a, t_stack *b)
 {
 	int		i;

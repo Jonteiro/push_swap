@@ -12,12 +12,6 @@
 
 #include "push_swap.h"
 
-// This function does three things.
-// 1. It checks if the number of input is less than 2.
-// 2. It checks if the number of input is equal to 2.
-//    If it is, it means it is a quoted string.
-// 3. It checks if the number of input is greater than 2.
-//     If it is, it lists the arguements.
 int	ft_atoi2(const char *str)
 {
 	int				mod;
@@ -47,11 +41,6 @@ int	ft_atoi2(const char *str)
 	return (mod * i);
 }
 
-// This function works and sorts the stacks
-// in case of they are passed in between quotation
-// marks. In this scenario, this function takes the
-// string, and splits the numbers in order to create
-// seperated integer number.
 t_stack	*ft_sub_process(char **argv)
 {
 	t_stack	*a;
@@ -73,13 +62,6 @@ t_stack	*ft_sub_process(char **argv)
 	return (a);
 }
 
-// This function does three things.
-// 1. It checks if the number of input is less than 2.
-// 2. It checks if the number of input is equal to 2.
-//    If it is, it means it is a quoted string. Call
-//	  another function. <ft_sub_process>
-// 3. It checks if the number of input is greater than 2.
-//     If it is, it lists the arguements.
 t_stack	*ft_process(int argc, char **argv)
 {
 	t_stack	*a;

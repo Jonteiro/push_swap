@@ -12,7 +12,6 @@
 
 #include "push_swap.h"
 
-// This function frees the stack.
 void	ft_free(t_stack **lst)
 {
 	t_stack	*tmp;

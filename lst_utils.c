@@ -12,7 +12,6 @@
 
 #include "push_swap.h"
 
-// This function returns the last element of the stack.
 t_stack	*ft_lstlast(t_stack *lst)
 {
 	if (!lst)
@@ -22,7 +21,6 @@ t_stack	*ft_lstlast(t_stack *lst)
 	return (lst);
 }
 
-// This function returns the size of the stack.
 int	ft_lstsize(t_stack *lst)
 {
 	size_t	i;
@@ -36,8 +34,6 @@ int	ft_lstsize(t_stack *lst)
 	return (i);
 }
 
-// This function finds and returns the smallest number
-// in the given stack.
 int	ft_min(t_stack *a)
 {
 	int		i;
@@ -52,8 +48,6 @@ int	ft_min(t_stack *a)
 	return (i);
 }
 
-// This function finds and returns the biggest number
-// in the given stack.
 int	ft_max(t_stack *a)
 {
 	int		i;

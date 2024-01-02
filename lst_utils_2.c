@@ -12,8 +12,7 @@
 
 #include "push_swap.h"
 
-// This function checks the index of a number
-// 	 in the stack.
+// find index in stack
 int	ft_find_index(t_stack *a, int nbr)
 {
 	int		i;
@@ -28,9 +27,7 @@ int	ft_find_index(t_stack *a, int nbr)
 	return (i);
 }
 
-// This function finds the correct place of the number in stack_b.
-// In other words, it check what index number nbr_push will get 
-// after it is being pushed to the stack_b.
+// index nbr_push will get after pushed to the stack_b
 int	ft_find_place_b(t_stack *stack_b, int nbr_push)
 {
 	int		i;
@@ -54,9 +51,7 @@ int	ft_find_place_b(t_stack *stack_b, int nbr_push)
 	return (i);
 }
 
-// This function finds the correct place of the number in stack_a.
-// In other words, it check what index number nbr_push will get 
-// after it is being pushed to the stack_a.
+// index nbr_push will get after pushed to the stack_a
 int	ft_find_place_a(t_stack *stack_a, int nbr_push)
 {
 	int		i;

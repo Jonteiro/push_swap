@@ -3,65 +3,40 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jonteiro <jonteiro@student.42.fr>          +#+  +:+       +#+         #
+#    By: josilvei <josilvei@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/12/22 14:09:25 by jonteiro          #+#    #+#              #
-#    Updated: 2023/12/22 14:25:10 by jonteiro         ###   ########.fr        #
+#    Created: 2023/01/08 14:06:44 by josilvei          #+#    #+#              #
+#    Updated: 2023/01/11 13:43:10 by josilvei         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = push_swap
-CC = gcc
+NAME = libft.a
+
+CC = cc
+
+CFLAGS = -Wall -Wextra -Werror
+
 RM = rm -f
-FLAGS = -Wall -Wextra -Werror
-LIBFTDIR = libft/
 
-SRC_1 = push_swap.c \
+SRC = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
+		ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c \
+		ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_putchar_fd.c \
+		ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_split.c \
+		ft_strchr.c ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c \
+		ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c \
+		ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
 
-SRC_2 =	algorithm.c \
-		ft_add_back.c \
-		ft_stack_new.c \
-		ft_check_utils.c \
-		ft_parse.c \
-		solver_utils_ab.c \
-		solver_utils_ba.c \
-		ft_rotate_and_push.c \
-		moves1.c \
-		moves2.c \
-		moves3.c \
-		ft_check_dup.c \
-		ft_check_sorted.c \
-		ft_error_print.c \
-		ft_free.c \
-		lst_utils.c \
-		lst_utils_2.c \
-		ft_parse_args_quoted.c \
-		ft_list_args.c \
-		ft_check_args.c \
-		ft_sort_big.c \
-		ft_sort_three.c \
-		ft_rotate_type.c \
-
-OBJ_1 = ${SRC_1:.c=.o}
-OBJ_2 = ${SRC_2:.c=.o}
-
-INCLUDE = -L ./libft -lft
-
-.c.o:
-	${CC} -c $< -o ${<:.c=.o}
-
-${NAME}: ${OBJ_1} ${OBJ_2}
-	make -C $(LIBFTDIR)
-	${CC} ${FLAGS} ${OBJ_1} ${OBJ_2} -o ${NAME} ${INCLUDE}
+OBJ = ${SRC:.c=.o}
 
 all: ${NAME}
 
+${NAME}: ${OBJ}
+	ar rcs ${NAME} ${OBJ}
+
 clean:
-	${RM} ${OBJ_1} ${OBJ_2} ${NAME}
-	@cd $(LIBFTDIR) && $(MAKE) clean
+	${RM} ${OBJ}
 
 fclean: clean
 	${RM} ${NAME}
-	@cd $(LIBFTDIR) && $(MAKE) fclean
 
-re: clean all
+re:	fclean ${NAME}

@@ -51,6 +51,8 @@ t_stack	*ft_sub_process(char **argv)
 	a = NULL;
 	i = 0;
 	tmp = ft_split(argv[1], 32);
+	if (!tmp[0])
+		ft_error();
 	while (tmp[i])
 	{
 		j = ft_atoi2(tmp[i]);

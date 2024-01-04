@@ -14,8 +14,10 @@
 
 int	ft_checksorted(t_stack *stack_a)
 {
-	int	i;
+	long	i;
 
+	if (!stack_a)
+		return (1);
 	i = stack_a->nbr;
 	while (stack_a)
 	{
